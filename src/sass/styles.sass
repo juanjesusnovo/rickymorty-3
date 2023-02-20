@@ -1,0 +1,777 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  list-style: none
+body
+  background-image: url("img/fondo.jpg")
+@font-face
+  font-family: rickymorty
+  src: url("./fonts/get_schwifty.ttf")
+@font-face
+  font-family: mina
+  src: url("./fonts/Mina-Regular.ttf")
+a
+  color: white
+a:link, a:visited, a:active
+  text-decoration: none
+
+// HEADER
+header
+  width: 100%
+  height: 10vh
+  padding: 10px
+  background-color: #262C3A
+  display: flex
+  align-items: center
+  justify-content: space-between
+.logoHeader
+  width: 75px
+.photoHeader
+  width: 13%
+.navHeader
+  width: 50%
+  display: flex
+  justify-content: space-around
+  flex-direction: row
+  column-gap: 150px
+.buttonsHeader
+  display: flex
+  width: 100%
+  font-size: 25px
+  font-family: mina
+  justify-content: space-between
+  a
+    color: white
+    transition: color 350ms ease
+  a:hover
+    color: greenyellow
+    transition: color 350ms ease
+
+.iconsHeader
+  display: flex
+  color: white
+  justify-content: space-around
+  width: 10%
+  font-size: 25px
+  a
+    color: white
+    transition: color 350ms ease
+  a:hover
+    color: greenyellow
+    transition: color 350ms ease
+  label:hover
+    color: greenyellow
+    transition: color 350ms ease
+
+.iconsHeader2
+  display: flex
+  color: white
+  justify-content: space-around
+  margin: 10px
+  width: 100%
+  font-size: 25px
+  button
+    background-color: white
+    transition: color 350ms ease
+  button:hover
+    background-color: greenyellow
+    transition: color 350ms ease
+  label:hover
+    color: greenyellow
+    transition: color 350ms ease
+
+.menu
+  display: none
+.menuCheck[type=checkbox]
+  display: none
+.menuDesplegado
+  display: none
+  flex-direction: column
+  position: absolute
+  margin-top: 5%
+  background-color: #262C3A
+  padding: 10px
+  font-family: mina
+.menuCheck[type=checkbox]:checked ~ .menuDesplegado
+    display: flex
+
+.menu1
+  display: flex
+.menuCheck1[type=checkbox]
+  display: none
+.menuDesplegado1
+  display: none
+  flex-direction: column
+  position: absolute
+  margin-top: 5%
+  background-color: #262C3A
+  padding: 10px
+  font-family: mina
+.menuCheck1[type=checkbox]:checked ~ .menuDesplegado1
+    display: flex
+//Footer
+footer
+  padding: 10px
+  width: 100%
+  height: 10vh
+  background-color: #262C3A
+  display: flex
+  align-items: center
+  justify-content: space-between
+.logoFooter
+  width: 150px
+.mediaIcons
+  display: flex
+  align-items: center
+  justify-content: space-around
+.iconsFooter
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  color: white
+  font-size: 25px
+  column-gap: 50px
+.navFooter
+  width: 40%
+  display: flex
+  justify-content: space-around
+  flex-direction: row
+  column-gap: 150px
+  color: white
+.buttonsFooter
+  width: 100%
+  display: flex
+  justify-content: space-between
+  column-gap: 60px
+  font-size: 25px
+  font-family: mina
+
+//Página de Inicio (Personajes del Inicio)
+.main-inix
+  min-height: 80vh
+  display: flex
+  flex-direction: column
+.logoRyM
+  width: 60%
+  margin: auto
+
+.section-init
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  min-height: 40vh
+  width: 100%
+  justify-content: space-around
+.charactersInit
+  align-items: center
+  border-radius: 20px
+  justify-content: space-around
+  margin: 10px
+  width: 30%
+  display: flex
+  height: 30vh
+  background-color: #70707080
+  div
+    margin: 20px
+    width: 50%
+    height: 100%
+    display: flex
+    flex-direction: column
+    color: white
+    font-family: mina
+    .status
+      width: 100%
+      span
+        font-size: 20px
+        width: 100%
+    .morinfo
+      width: 100%
+      font-size: 17px
+.figure-init
+  width: 50%
+  height: 100%
+  text-align: center
+.character
+  border-radius: 20px
+  width: 100%
+  height: 100%
+  text-align: center
+.name
+  margin: 10px
+  color: white
+  text-align: center
+  font-size: 20px
+  font-family: rickymorty
+
+// Lista de Personajes
+.main-chars
+  min-height: 80vh
+  display: flex
+  flex-wrap: wrap
+.section-char
+  display: flex
+  min-height: 25vh
+  width: 100%
+  justify-content: space-around
+  flex-wrap: wrap
+.characterList
+  display: flex
+  align-items: center
+  justify-content: space-around
+  width: 45%
+  margin: auto
+  background-color: #70707080
+.characterL
+  width: 100%
+  height: 170px
+  margin-top: 10px
+  margin-bottom: 10px
+.moreInfo
+  font-family: rickymorty
+  font-size: 20px
+  text-align: center
+.infoP
+  font-size: 20px
+  color: white
+  width: 50%
+  border: black
+  font-family: mina
+.characterExtended
+  font-size: 40px
+  font-family: mina
+  color: white
+
+// Capitulos
+.main-caps
+  min-height: 80vh
+  display: flex
+  flex-wrap: wrap
+.section-caps
+  display: flex
+  min-height: 80vh
+  width: 100%
+  flex-wrap: wrap
+.temps
+  display: flex
+  align-items: center
+  justify-content: space-around
+  border-radius: 20px
+  width: 26%
+  margin: auto
+  background-color: #70707080
+.temporada
+  width: 200px
+  height: 300px
+  margin-top: 20px
+  margin-bottom: 20px
+.datos-temp
+  font-size: 18px
+  font-family: mina
+  color: white
+
+//Filtrado
+ul
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 15px
+  margin-bot: 15px
+  li
+    width: 20%
+    display: flex
+    justify-content: center
+    button
+      width: 25%
+      height: 6vh
+      border-radius: 10px
+      background-color: #707070
+    button:hover
+      background-color: greenyellow
+.filtrado
+  width: 50%
+  display: flex
+  justify-content: center
+  background-color: #70707080
+  border-radius: 20px 
+.Filtros
+  width: 80%
+  display: flex
+  justify-content: center
+  flex-direction: row
+  flex-wrap: wrap
+  input
+    width: 100%
+    border-radius: 10px
+    height: 2.5vh
+    font-family: mina
+    margin-top: 5px
+  select
+    border-radius: 10px
+    width: 32%
+    height: 2.5vh
+    margin: 5px
+    font-family: mina
+  button
+    width: 30%
+    margin: 10px
+    border-radius: 5px
+    font-family: mina
+
+//Personajes ++
+.main-charExt
+  min-height: 80vh
+  display: flex
+  justify-content: center
+  align-items: center
+.section-charExt
+  display: flex
+.characterExt
+  display: flex
+  justify-content: space-evenly
+  flex-wrap: wrap
+.photoC
+  width: 40%
+  padding: 30px
+.datos
+  padding: 40px
+  width: 50%
+.nombre
+  font-family: rickymorty
+  font-size: 70px
+  color: white
+  text-align: center
+  margin-bottom: 30px
+.infoExtended
+  font-family: mina
+  font-size: 25px
+  color: white
+
+//Contacto
+.main-contacto
+  min-height: 80vh
+  display: flex
+  flex-wrap: wrap
+.formularioC
+  display: flex
+  justify-content: center
+  width: 100%
+  flex-wrap: wrap
+  padding: 100px
+.enviar
+  background-color: #707070
+  font-family: mina
+  border-radius: 10px
+  width: 10%
+  height: 3.5vh
+
+.logoRyMc
+  width: 35%
+  margin: auto
+.form1
+  display: flex
+  width: 50%
+  flex-direction: column
+  align-items: end
+  padding: 10px
+.form1 label
+  width: 100%
+
+.form2
+  padding: 10px
+  display: flex
+  width: 50%
+  label
+    width: 100%
+.contacto
+  width: 100%
+  height: 30px
+  margin-bottom: 40px
+  background-color: gray
+  font-size: 1.3rem
+  font-family: mina
+  color: white
+textarea
+  width: 100%
+  height: 180px
+  background-color: gray
+  font-size: 1.3rem
+  color: white
+  font-family: mina
+
+//Inicio de Sesion
+.main-sesion
+  min-height: 80vh
+  display: flex
+  width: 100%
+  flex-wrap: wrap
+.formularioSesion
+  display: flex
+  width: 100%
+  align-items: center
+  flex-direction: column
+.logoRyMs
+  width: 50%
+  margin: auto
+.sesion
+  width: 70vh
+  height: 30px
+  margin-bottom: 10px
+  background-color: #707070
+  font-size: 1.3rem
+  font-family: mina
+  color: white
+.boton
+  width: 15%
+  height: 3vh
+  color: white
+  background-color: #707070
+  border-radius: 10px
+.checkbox
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  color: white
+  font-family: mina
+  input
+    width: 20%
+  p
+    width: 80%
+
+//UserPage
+.userPage
+  display: flex
+  justify-content: center
+  height: 80vh
+.texto
+  font-family: mina
+  font-size: 25px
+  color: white
+  text-align: center
+
+//ERROR 404
+.Error
+  min-height: 80vh
+
+.ErrorS
+  display: flex
+  justify-content: center
+  align-items: center
+h1
+  margin-top: 50px
+  color: greenyellow
+  font-family: rickymorty
+  font-size: 100px
+.portal
+  width: 500px
+  height: 500px
+  animation: move 4s ease infinite
+
+@keyframes move
+  0%
+    transform: translateX(40vw) rotateZ(180deg)
+  50%
+    transform: translateX(30vw) rotateZ(360deg)
+  100%
+    transform: translateX(40vw) rotateZ(180deg)
+
+.acordeon
+  font-family: rickymorty
+  font-size: 20px
+  background-color: gray
+  color: greenyellow
+  padding: 20px
+  width: 100%
+  transition: all 1s ease
+.acordeon:hover
+  background-color: beige
+  color: black
+.mostrar
+  display: flex
+  background-color: #707070
+  flex-wrap: wrap
+  animation: trans 1s ease
+  p
+    font-family: mina
+    font-size: 25px
+    color: greenyellow
+    width: 30%
+
+
+@keyframes trans
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.ocultar
+  display: none
+  background-color: #707070
+  flex-wrap: wrap
+
+  p
+    font-family: mina
+    font-size: 25px
+    color: greenyellow
+    width: 30%
+
+.ocultando
+  animation: transOc 1s ease
+
+@keyframes transOc
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+.rickAcordeon
+  width: 400px
+  padding: 40px
+
+//RESPONSIVE
+@media (max-width: 1600px)
+  .photoC
+    padding: 10px
+  .infoExtended
+    font-size: 20px
+
+@media (max-width: 1460px)
+  .buttonsFooter
+    font-size: 20px
+  .infoP
+    font-size: 17px
+  .characterL
+    width: 150px
+    height: 150px
+
+@media (max-width: 1324px)
+  .infoP
+    font-size: 15px
+  .name
+    font-size: 20px
+
+@media  (max-width: 1280px)
+  .character
+    width: 150px
+    height: 130px
+  .info
+    font-size: 18px
+  .name
+    font-size: 17px
+
+@media (max-width: 1232px)
+  .navFooter
+    width: 50%
+
+@media (max-width: 1150px)
+  .characterL
+    width: 130px
+    height: 130px
+  .characterList
+    width: 49%
+    padding: 10px
+  .datos
+    width: 60%
+
+
+@media (max-width: 1105px)
+  .characterList
+    padding: 5px
+
+@media (max-width: 1084px)
+  .characterList
+    height: 20vh
+  .temporada
+    width: 160px
+    height: 260px
+
+@media (max-width: 997px)
+  .infoP
+    font-size: 13px
+
+@media (max-width: 990px)
+  .section-init
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .charactersInit
+    width: 70%
+    padding: 20px
+    margin-bottom: 20px
+  .character
+    width: 200px
+    height: 170px
+  .info
+    font-size: 20px
+  footer
+    height: 15vh
+    flex-wrap: wrap
+  .mediaIcons
+    width: 100%
+  .navFooter
+    width: 100%
+  .iconsFooter
+    font-size: 30px
+  .buttonsFooter
+    font-size: 25px
+  .formularioC
+    padding: 10px
+
+@media (max-width: 970px)
+  .photoC
+    width: 650px
+  .datos
+    width: 100%
+
+@media (max-width: 950px)
+  .photoHeader
+    display: none
+
+@media (max-width: 905px)
+  .characterList
+    width: 80%
+    margin-bottom: 10px
+  .infoP
+    font-size: 17px
+
+@media (max-width: 870px)
+  .datos-temps
+    font-size: 17px
+  .form1
+    width: 100%
+  .form2
+    width: 100%
+  .form2 textarea
+    width: 100%
+
+
+@media (max-width: 833px)
+  .temps
+    width: 45%
+    margin-bottom: 10px
+
+@media (max-width: 820px)
+  header
+    justify-content: space-evenly
+  .buttonsHeader
+    font-size: 20px
+
+@media (max-width: 725px)
+  .photoC
+    width: 550px
+
+@media (max-width: 700px)
+  .sesion
+    width: 100%
+  .formularioSesion label
+    width: 80%
+
+@media (max-width: 668px)
+  .infoP
+    font-size: 15px
+
+@media (max-width: 660px)
+  .info
+    font-size: 18px
+  .character
+    width: 170px
+    height: 150px
+
+@media (max-width: 630px)
+  .infoP
+    font-size: 13px
+  .name
+    font-size: 15px
+  .boton
+    width: 25%
+
+@media (max-width: 615px)
+  .buttonsFooter
+    font-size: 20px
+  .temps
+    width: 80%
+  .datos-temp
+    font-size: 20px
+
+@media (max-width: 600px)
+  .charactersInit
+    width: 90%
+  .buttonsHeader
+    font-size: 17px
+  .photoC
+    width: 450px
+    height: 450px
+
+@media(max-width: 560px)
+  .logoHeader
+    width: 70px
+    height: 71px
+  .photoC
+    width: 450px
+  .buttonsHeader
+    display: flex
+
+@media (max-width: 550px)
+  .buttonsHeader
+    display: none
+  .iconsHeader
+    width: 40%
+  .menu
+    display: flex
+    flex-direction: column
+  li:hover
+    background-color: gray
+
+@media (max-width: 545px)
+  .characterL
+    width: 110px
+    height: 110px
+  .name
+    font-size: 13px
+
+@media (max-width: 525px)
+  .buttonsFooter
+    font-size: 15px
+  .iconsHeader
+    font-size: 23px
+  .boton
+    width: 30%
+
+@media (max-width: 500px)
+  .charactersInit
+    flex-wrap: wrap
+  .character
+    width: 100%
+  .info
+    width: 100%
+  .characterList
+    flex-wrap: wrap
+    height: 33vh
+  .characterL
+    width: 100%
+  .name
+    width: 70%
+  .infoP
+    width: 100%
+  .photoC
+    width: 350px
+    height: 350px
+
+@media (max-width: 450px)
+  .charactersInit
+    height: 35vh
+
+@media (max-width: 400px)
+  .temporada
+    width: 140px
+    height: 240px
+  .temps
+    p
+      font-size: 15px
+
+@media (max-width: 380px)
+  .photoC
+    width: 300px
+    height: 300px
